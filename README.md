@@ -1,7 +1,15 @@
-# COMP598-Final-Project
+## COMP598-Final-Project
 COMP 598 Final Project - Data Science Project
 
-# Google Drive
+### Scripts
+*collect_hottest.py
+  *collect 333 of the hottest posts from the "hot" filter on reddit for three consectutive days
+*collect_names.py
+  *filter out the data we collect to only include "Trump" and "Biden"
+
+### Google Drive
 https://drive.google.com/drive/folders/1h8kGT1fFaTk5WMRWp6qVTOGu3olBTrvT
+
+
 
 
