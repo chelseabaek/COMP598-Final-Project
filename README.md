@@ -1,5 +1,4 @@
-## COMP598-Final-Project
-COMP 598 Final Project - Data Science Project
+## COMP 598 Final Project - Data Science Project
 
 ### Scripts
 *collect_hottest.py
