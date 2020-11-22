@@ -1,4 +1,4 @@
-## COMP 598 Final Project - Data Science Project
+## Data Science Project
 
 ### Scripts
 *collect_hottest.py
