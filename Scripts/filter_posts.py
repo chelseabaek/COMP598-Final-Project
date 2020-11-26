@@ -21,7 +21,7 @@ def main():
 	# filter for tara, ivanka, mary and hunter
 	for post in post_list:
 		title = post['title'].lower()
-		if 'lara' in title or 'ivanka' in title or 'mary' in title or 'hunter' in title:
+		if 'lara' in title or 'ivanka' in title or 'mary' in title or 'hunter' in title or 'donald trump jr' in title:
 			screen.append(post)	
 	for post in screen:
 		print(post['title'])
