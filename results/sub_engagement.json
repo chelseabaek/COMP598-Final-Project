@@ -1,0 +1,70 @@
+{
+    "politics": {
+        "1.0": {
+            "number of posts": 47,
+            "score": 319.5270153249059
+        },
+        "2.0": {
+            "number of posts": 61,
+            "score": 407.58304068759736
+        },
+        "3.0": {
+            "number of posts": 172,
+            "score": 1148.119102097477
+        },
+        "4.0": {
+            "number of posts": 196,
+            "score": 1339.0959211608474
+        },
+        "5.0": {
+            "number of posts": 97,
+            "score": 602.6700665212288
+        },
+        "6.0": {
+            "number of posts": 35,
+            "score": 202.93395700957123
+        },
+        "7.0": {
+            "number of posts": 29,
+            "score": 215.29570678807613
+        },
+        "8.0": {
+            "number of posts": 16,
+            "score": 97.29805771700495
+        }
+    },
+    "conservative": {
+        "1.0": {
+            "number of posts": 5,
+            "score": 18.869481165546997
+        },
+        "2.0": {
+            "number of posts": 22,
+            "score": 97.39919837909483
+        },
+        "3.0": {
+            "number of posts": 79,
+            "score": 374.20507103783234
+        },
+        "4.0": {
+            "number of posts": 89,
+            "score": 401.3726291356956
+        },
+        "5.0": {
+            "number of posts": 36,
+            "score": 151.808859056445
+        },
+        "6.0": {
+            "number of posts": 14,
+            "score": 58.474226955291414
+        },
+        "8.0": {
+            "number of posts": 16,
+            "score": 72.83456570942843
+        },
+        "7.0": {
+            "number of posts": 1,
+            "score": 3.2188758248682006
+        }
+    }
+}
