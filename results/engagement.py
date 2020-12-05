@@ -93,6 +93,43 @@ def overall(sub_dict):
 
 	return overall_dict
 
+def get_top_posts(coded_df):
+        top_posts = {}
+        grouped_dfs = coded_df.groupby('group')
+        for group in grouped_dfs:
+                group_name = group[0]
+                df = group[1]
+                sorted_df = df.sort_values(by='score', ascending=False)[:10]
+                top_posts[group_name] = list(zip(list(sorted_df['title']), list(sorted_df['score']), list(sorted_df['coding'])))
+        return top_posts
+
+def by_mention(coded_df):
+	def mention(title):
+		title = title.lower()
+		if 'biden' in title and 'trump' in title:
+			return 'Both'
+		elif 'biden' in title:
+			return 'Biden'
+		elif 'trump' in title:
+			return 'Trump'
+		else:
+			return 'Both'	
+	coded_df['mention'] = coded_df['title'].map(lambda x: mention(x))
+	mention_dict = {'Biden': {'topics': {}, 'score': 0, 'num_posts': 0}, 'Trump': {'topics': {}, 'score': 0, 'num_posts': 0}, 'Both': {'topics': {}, 'score': 0, 'num_posts': 0}}
+	for mention in mention_dict.keys():
+		mention_df = coded_df[coded_df['mention'] == mention]
+		mention_dict[mention]['num_posts'] = len(mention_df)
+		logs = mention_df['score'].map(lambda x: math.log(x) if x != 0 else 0)
+		mention_dict[mention]['score'] = sum(logs)
+		grouped_dfs = mention_df.groupby('coding')
+		for group in grouped_dfs:
+			topic = group[0]
+			df = group[1]
+			mention_dict[mention]['topics'][topic] = {'num_posts': len(df), 'score': 0}
+			logs = df['score'].map(lambda x: math.log(x) if x != 0 else 0)
+			mention_dict[mention]['topics'][topic]['score'] = sum(logs)
+	return mention_dict
+	
 def main():
 	parser = argparse.ArgumentParser()
 	parser.add_argument('organized_csv')
@@ -112,15 +149,11 @@ def main():
 	engagement_dict = compute_engagement(groups, coded_df)
 	sub_engagement = by_subreddit(engagement_dict)
 	overall_engagement = overall(sub_engagement)
+	top_posts = get_top_posts(coded_df)
+	mention_dict = by_mention(coded_df)
 
-	top_posts = {}
-	grouped_dfs = coded_df.groupby('group')
-	for group in grouped_dfs:
-		group_name = group[0]
-		df = group[1]
-		sorted_df = df.sort_values(by='score', ascending=False)[:10]
-		top_posts[group_name] = list(zip(list(sorted_df['title']), list(sorted_df['score']), list(sorted_df['coding'])))
-	
+	with open(osp.join(output_folder, 'mentions.json'), 'w') as fp:
+		json.dump(mention_dict, fp, indent=4)	
 	with open(osp.join(output_folder, 'top_posts.json'), 'w') as fp:
 		json.dump(top_posts, fp, indent=4)
 	with open(osp.join(output_folder, 'engagement_output.json'), 'w') as fp:
