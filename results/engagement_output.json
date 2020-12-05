@@ -2,193 +2,238 @@
     "politics_filtered_nov19": {
         "1.0": {
             "number of posts": 12,
-            "score": 82.30266915553592
+            "score": 82.30266915553592,
+            "average_score": 6.858555762961327
         },
         "2.0": {
             "number of posts": 24,
-            "score": 124.27700698761709
+            "score": 124.27700698761709,
+            "average_score": 5.1782086244840455
         },
         "3.0": {
             "number of posts": 60,
-            "score": 395.86713840269306
+            "score": 395.86713840269306,
+            "average_score": 6.597785640044885
         },
         "4.0": {
             "number of posts": 70,
-            "score": 474.756084994047
+            "score": 474.756084994047,
+            "average_score": 6.782229785629243
         },
         "5.0": {
             "number of posts": 26,
-            "score": 168.09098891657914
+            "score": 168.09098891657914,
+            "average_score": 6.465038035253044
         },
         "6.0": {
             "number of posts": 7,
-            "score": 43.42284026002507
+            "score": 43.42284026002507,
+            "average_score": 6.203262894289296
         },
         "7.0": {
             "number of posts": 3,
-            "score": 19.01967107936181
+            "score": 19.01967107936181,
+            "average_score": 6.33989035978727
         },
         "8.0": {
             "number of posts": 5,
-            "score": 31.815400822009494
+            "score": 31.815400822009494,
+            "average_score": 6.363080164401898
         }
     },
     "conservative_filtered_nov20": {
         "1.0": {
             "number of posts": 2,
-            "score": 6.396929655216146
+            "score": 6.396929655216146,
+            "average_score": 3.198464827608073
         },
         "2.0": {
             "number of posts": 10,
-            "score": 44.78472939944521
+            "score": 44.78472939944521,
+            "average_score": 4.478472939944521
         },
         "3.0": {
             "number of posts": 29,
-            "score": 145.3948109632632
+            "score": 145.3948109632632,
+            "average_score": 5.013614171147007
         },
         "4.0": {
             "number of posts": 33,
-            "score": 142.6810351952873
+            "score": 142.6810351952873,
+            "average_score": 4.323667733190525
         },
         "5.0": {
             "number of posts": 17,
-            "score": 68.20887394975179
+            "score": 68.20887394975179,
+            "average_score": 4.012286702926576
         },
         "6.0": {
             "number of posts": 5,
-            "score": 16.504029255013076
+            "score": 16.504029255013076,
+            "average_score": 3.3008058510026155
         },
         "8.0": {
             "number of posts": 4,
-            "score": 19.595777738104566
+            "score": 19.595777738104566,
+            "average_score": 4.8989444345261415
         }
     },
     "politics_filtered_nov20": {
         "1.0": {
             "number of posts": 11,
-            "score": 73.84878252584085
+            "score": 73.84878252584085,
+            "average_score": 6.71352568416735
         },
         "2.0": {
             "number of posts": 22,
-            "score": 158.29135842886856
+            "score": 158.29135842886856,
+            "average_score": 7.195061746766753
         },
         "3.0": {
             "number of posts": 52,
-            "score": 351.1407341703196
+            "score": 351.1407341703196,
+            "average_score": 6.7527064263523
         },
         "4.0": {
             "number of posts": 63,
-            "score": 430.0997427310778
+            "score": 430.0997427310778,
+            "average_score": 6.826980043350441
         },
         "5.0": {
             "number of posts": 34,
-            "score": 218.50790079999422
+            "score": 218.50790079999422,
+            "average_score": 6.426702964705712
         },
         "6.0": {
             "number of posts": 9,
-            "score": 45.13103438550462
+            "score": 45.13103438550462,
+            "average_score": 5.01455937616718
         },
         "7.0": {
             "number of posts": 19,
-            "score": 135.98776123455468
+            "score": 135.98776123455468,
+            "average_score": 7.157250591292351
         },
         "8.0": {
             "number of posts": 5,
-            "score": 29.48949821624605
+            "score": 29.48949821624605,
+            "average_score": 5.89789964324921
         }
     },
     "politics_filtered_nov21": {
         "1.0": {
             "number of posts": 24,
-            "score": 163.37556364352912
+            "score": 163.37556364352912,
+            "average_score": 6.807315151813714
         },
         "2.0": {
             "number of posts": 15,
-            "score": 125.01467527111168
+            "score": 125.01467527111168,
+            "average_score": 8.33431168474078
         },
         "3.0": {
             "number of posts": 60,
-            "score": 401.1112295244644
+            "score": 401.1112295244644,
+            "average_score": 6.685187158741074
         },
         "4.0": {
             "number of posts": 63,
-            "score": 434.2400934357227
+            "score": 434.2400934357227,
+            "average_score": 6.892699895805122
         },
         "5.0": {
             "number of posts": 37,
-            "score": 216.0711768046554
+            "score": 216.0711768046554,
+            "average_score": 5.839761535260957
         },
         "6.0": {
             "number of posts": 19,
-            "score": 114.38008236404154
+            "score": 114.38008236404154,
+            "average_score": 6.0200043349495544
         },
         "7.0": {
             "number of posts": 7,
-            "score": 60.28827447415964
+            "score": 60.28827447415964,
+            "average_score": 8.612610639165663
         },
         "8.0": {
             "number of posts": 6,
-            "score": 35.9931586787494
+            "score": 35.9931586787494,
+            "average_score": 5.998859779791567
         }
     },
     "conservative_filtered_nov19": {
         "2.0": {
             "number of posts": 7,
-            "score": 33.7950500224986
+            "score": 33.7950500224986,
+            "average_score": 4.827864288928372
         },
         "3.0": {
             "number of posts": 33,
-            "score": 164.91511909435505
+            "score": 164.91511909435505,
+            "average_score": 4.997427851344092
         },
         "4.0": {
             "number of posts": 29,
-            "score": 130.35865311883896
+            "score": 130.35865311883896,
+            "average_score": 4.495125969615136
         },
         "5.0": {
             "number of posts": 11,
-            "score": 47.22869372514542
+            "score": 47.22869372514542,
+            "average_score": 4.293517611376856
         },
         "6.0": {
             "number of posts": 6,
-            "score": 27.834016960247798
+            "score": 27.834016960247798,
+            "average_score": 4.639002826707967
         },
         "8.0": {
             "number of posts": 6,
-            "score": 27.703954179672618
+            "score": 27.703954179672618,
+            "average_score": 4.617325696612103
         }
     },
     "conservative_filtered_nov21": {
         "1.0": {
             "number of posts": 3,
-            "score": 12.47255151033085
+            "score": 12.47255151033085,
+            "average_score": 4.1575171701102835
         },
         "2.0": {
             "number of posts": 5,
-            "score": 18.81941895715101
+            "score": 18.81941895715101,
+            "average_score": 3.763883791430202
         },
         "3.0": {
             "number of posts": 17,
-            "score": 63.89514098021408
+            "score": 63.89514098021408,
+            "average_score": 3.758537704718475
         },
         "4.0": {
             "number of posts": 27,
-            "score": 128.33294082156937
+            "score": 128.33294082156937,
+            "average_score": 4.753071882280347
         },
         "5.0": {
             "number of posts": 8,
-            "score": 36.37129138154776
+            "score": 36.37129138154776,
+            "average_score": 4.54641142269347
         },
         "6.0": {
             "number of posts": 3,
-            "score": 14.136180740030536
+            "score": 14.136180740030536,
+            "average_score": 4.712060246676845
         },
         "7.0": {
             "number of posts": 1,
-            "score": 3.2188758248682006
+            "score": 3.2188758248682006,
+            "average_score": 3.2188758248682006
         },
         "8.0": {
             "number of posts": 6,
-            "score": 25.53483379165126
+            "score": 25.53483379165126,
+            "average_score": 4.255805631941876
         }
     }
 }

@@ -20,7 +20,8 @@ def compute_engagement(groups, coded_df):
 			logs = topic[1]['score'].map(lambda x: math.log(x) if x != 0 else 0)
 			topic_score = sum(logs)
 			num_posts = len(logs)
-			engagement_dict[group_name][topic_name] = {'number of posts': num_posts, 'score': topic_score}
+			average_score = topic_score / num_posts
+			engagement_dict[group_name][topic_name] = {'number of posts': num_posts, 'score': topic_score, 'average_score': average_score}
 
 	return engagement_dict
 
@@ -77,6 +78,9 @@ def by_subreddit(engagement_dict):
 				sub_dict[sub][topic] = {}
 				sub_dict[sub][topic]['number of posts'] = engagement_dict[group][topic]['number of posts']
 				sub_dict[sub][topic]['score'] = engagement_dict[group][topic]['score']
+	for sub in sub_dict:
+		for topic in sub_dict[sub]:
+			sub_dict[sub][topic]['average_score'] = sub_dict[sub][topic]['score'] / sub_dict[sub][topic]['number of posts']
 	return sub_dict
 
 def overall(sub_dict):
@@ -90,7 +94,8 @@ def overall(sub_dict):
 				overall_dict[topic] = {}
 				overall_dict[topic]['number of posts'] = sub_dict[sub][topic]['number of posts']
 				overall_dict[topic]['score'] = sub_dict[sub][topic]['score']
-
+	for topic in overall_dict:
+		overall_dict[topic]['average_score'] = overall_dict[topic]['score'] / overall_dict[topic]['number of posts']
 	return overall_dict
 
 def get_top_posts(coded_df):
@@ -125,9 +130,10 @@ def by_mention(coded_df):
 		for group in grouped_dfs:
 			topic = group[0]
 			df = group[1]
-			mention_dict[mention]['topics'][topic] = {'num_posts': len(df), 'score': 0}
+			mention_dict[mention]['topics'][topic] = {'num_posts': len(df), 'score': 0, 'average_score': 0}
 			logs = df['score'].map(lambda x: math.log(x) if x != 0 else 0)
 			mention_dict[mention]['topics'][topic]['score'] = sum(logs)
+			mention_dict[mention]['topics'][topic]['average_score'] = sum(logs) / len(logs)
 	return mention_dict
 	
 def main():
